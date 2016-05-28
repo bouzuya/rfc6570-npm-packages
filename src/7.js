@@ -2,7 +2,7 @@
 // https://github.com/LuvDaSun/rfc6570/
 // NOTE:
 //   Array parse
-const UriTemplate = require('rfc6570/src/URITemplate');
+const UriTemplate = require('rfc6570/src/UriTemplate');
 
 const init = (template) => {
   const t = new UriTemplate(template);
