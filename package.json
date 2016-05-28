@@ -1,0 +1,32 @@
+{
+  "name": "rfc6570-npm-packages",
+  "description": "rfc6570 npm packages",
+  "version": "0.0.0",
+  "author": {
+    "name": "bouzuya",
+    "email": "m@bouzuya.net",
+    "url": "http://bouzuya.net/"
+  },
+  "dependencies": {
+    "rfc6570": "0.1.8",
+    "temple": "0.0.3",
+    "uri-template": "1.0.0",
+    "uri-template-lite": "0.1.11",
+    "uri-template.js": "0.1.2",
+    "uri-templates": "0.1.9",
+    "urijs": "1.18.0",
+    "uritemplate": "0.3.4",
+    "url-template": "2.0.6"
+  },
+  "engines": {
+    "node": ">=6.0"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
