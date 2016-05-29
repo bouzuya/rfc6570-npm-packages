@@ -6,19 +6,19 @@
   - 224,970 DL / 4006 star / deps: none / [medialize/URI.js][]
 2. [npm:url-template][] -> **test failed**
   - 112,593 DL /   74 star / deps: none / [bramstein/url-template][]
-3. [npm:uri-templates][]
+3. [npm:uri-templates][] -> **test failed**
   -  89,673 DL /   71 star / deps: none / [geraintluff/uri-templates][]
 4. [npm:uritemplate][]
   -  34,824 DL /   85 star / deps: none / [fxa/uritemplate-js][]
 5. [npm:uri-template][]
   -  21,818 DL /   25 star / deps: pct-encode / [grncdr/uri-template][]
-6. [npm:uri-template-lite][]
+6. [npm:uri-template-lite][] -> **test failed**
   -     455 DL /    2 star / deps: none / [litejs/uri-template-lite][]
 7. [npm:rfc6570][]
   -     402 DL /    8 star / deps: none / [LuvDaSun/rfc6570][]
-8. [npm:temple][]
+8. [npm:temple][] -> **test failed**
   -      97 DL /    5 star / deps: none / [brettstimmerman/temple][]
-9. [npm:uri-template.js][]
+9. [npm:uri-template.js][] -> **test failed**
   -      39 DL /    4 star / deps: lodash / [rezigned/uri-template.js][]
 
 ## Usage
