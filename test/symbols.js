@@ -49,4 +49,28 @@ modules.forEach(({ init, name, no }) => {
     assertExpand(init, template, variables, [uri]);
     resolve();
   });
+
+  test(`symbols - {#foo} - ${no} ${name}`, resolve => {
+    const ascii = '' +
+      ' !"#$%&\'()*+,-./' +
+      '0123456789:;<=>?' +
+      '@ABCDEFGHIJKLMNO' +
+      'PQRSTUVWXYZ[\\]^_' +
+      '`abcdefghijklmno' +
+      'pqrstuvwxyz{|}~';
+    const template = '{#foo}';
+    const variables = {
+      'foo': ascii
+    };
+    const uri = '' +
+      '#%20!%22#$%25&\'()*+,-./' +
+      '0123456789:;%3C=%3E?' +
+      '@ABCDEFGHIJKLMNO' +
+      'PQRSTUVWXYZ[%5C]%5E_' +
+      '%60abcdefghijklmno' +
+      'pqrstuvwxyz%7B%7C%7D~';
+
+    assertExpand(init, template, variables, [uri]);
+    resolve();
+  });
 });
