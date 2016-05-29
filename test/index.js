@@ -22,18 +22,30 @@ const inits = [
   init9
 ];
 
-inits.forEach((init, index) => {
-  test(`${(index + 1)} expand`, resolve => {
-    const template = '/search/{term:1}/{term}/{?q*,limit}';
-    const params = {
-      term: 'john',
-      q: ['a', 'b'],
-      limit: 10,
-    };
-    const uri = '/search/j/john/?q=a&q=b&limit=10';
+const assertExpand = (init, template, variables, uris) => {
+  const { expand } = init(template);
+  const uri = expand(variables);
+  assert(uris.some(u => u === uri), `${uri} / ${uris}`);
+};
 
-    const { expand } = init(template);
-    assert(expand(params) === uri);
-    resolve();
-  });
-});
+const loadExamples = (key) => {
+  return require(`../uritemplate-test/${key}.json`);
+};
+
+const parseExamples = (examples) => {
+  return Object.keys(examples).reduce((allTestCases, section) => {
+    const { variables, testcases } = examples[section];
+    const newTestCases = testcases.map(([template, uriOrUris]) => {
+      const uris = typeof uriOrUris === 'string' ? [uriOrUris] : uriOrUris;
+      return { section, template, uris, variables };
+    });
+    return allTestCases.concat(newTestCases);
+  }, []);
+};
+
+const testCases = (key) => {
+  const examples = loadExamples(key);
+  return parseExamples(examples);
+};
+
+module.exports = { assertExpand, inits, testCases };
