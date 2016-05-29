@@ -1,7 +1,8 @@
-// uri-templates
 // https://github.com/geraintluff/uri-templates
 // NOTE:
-const UriTemplate = require('uri-templates');
+const no = 3;
+const name = 'uri-templates';
+const UriTemplate = require(name);
 
 const init = (template) => {
   const t = new UriTemplate(template);
@@ -10,4 +11,4 @@ const init = (template) => {
   return { expand, extract };
 };
 
-module.exports = { init };
+module.exports = { init, name, no };

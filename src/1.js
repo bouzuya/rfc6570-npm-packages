@@ -1,8 +1,9 @@
-// urijs
 // https://github.com/medialize/URI.js
 // NOTE:
 //   no extract
-const Uri = require('urijs');
+const no = 1;
+const name = 'urijs';
+const Uri = require(name);
 const UriTemplate = require('urijs/src/URITemplate');
 
 const init = (template) => {
@@ -11,4 +12,4 @@ const init = (template) => {
   return { expand, extract };
 };
 
-module.exports = { init };
+module.exports = { init, name, no };

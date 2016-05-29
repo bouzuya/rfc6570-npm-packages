@@ -1,8 +1,8 @@
 const { test } = require('eater/runner');
-const { inits, assertExpand } = require('./');
+const { modules, assertExpand } = require('./');
 
-inits.forEach((init, index) => {
-  test(`${(index + 1)} expand`, resolve => {
+modules.forEach(({ init, name, no }) => {
+  test(`${no} ${name} expand`, resolve => {
     const template = '/search/{term:1}/{term}/{?q*,limit}';
     const variables = {
       term: 'john',

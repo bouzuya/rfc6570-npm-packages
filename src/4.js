@@ -1,8 +1,9 @@
-// uritemplate
 // https://github.com/fxa/uritemplate-js/
 // NOTE:
 //   no extract
-const UriTemplate = require('uritemplate');
+const no = 4;
+const name = 'uritemplate';
+const UriTemplate = require(name);
 
 const init = (template) => {
   const t = UriTemplate.parse(template);
@@ -11,4 +12,4 @@ const init = (template) => {
   return { expand, extract };
 };
 
-module.exports = { init };
+module.exports = { init, name, no };

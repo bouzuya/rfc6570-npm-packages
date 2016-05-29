@@ -1,8 +1,9 @@
-// uri-template-lite
 // https://github.com/litejs/uri-template-lite
 // NOTE:
 //   Array parse
-const { URI } = require('uri-template-lite');
+const no = 6;
+const name = 'uri-template-lite';
+const { URI } = require(name);
 
 const init = (template) => {
   const t = new URI.Template(template);
@@ -11,4 +12,4 @@ const init = (template) => {
   return { expand, extract };
 };
 
-module.exports = { init };
+module.exports = { init, name, no };

@@ -1,8 +1,9 @@
-// rfc6570
 // https://github.com/LuvDaSun/rfc6570/
 // NOTE:
 //   Array parse
-const UriTemplate = require('rfc6570/src/UriTemplate');
+const no = 7;
+const name = 'rfc6570/src/UriTemplate';
+const UriTemplate = require(name);
 
 const init = (template) => {
   const t = new UriTemplate(template);
@@ -11,4 +12,4 @@ const init = (template) => {
   return { expand, extract };
 };
 
-module.exports = { init };
+module.exports = { init, name, no };

@@ -1,12 +1,12 @@
 const { test } = require('eater/runner');
-const { assertExpand, inits, testCases } = require('./');
+const { assertExpand, modules, testCases } = require('./');
 
 const tests = testCases('spec-examples-by-section');
 
-inits.forEach((init, index) => {
+modules.forEach(({ init, name, no }) => {
   tests.forEach(testCases => {
     const { section, template, uris, variables } = testCases;
-    test(`${index + 1} ${section} ${template}`, resolve => {
+    test(`${no} ${name} ${section} ${template}`, resolve => {
       assertExpand(init, template, variables, uris);
       resolve();
     });

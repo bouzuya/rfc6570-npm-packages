@@ -1,7 +1,8 @@
-// uri-template.js
 // https://github.com/rezigned/uri-template.js
 // NOTE:
-const UriTemplate = require('uri-template.js');
+const no = 9;
+const name = 'uri-template.js';
+const UriTemplate = require(name);
 
 const init = (template) => {
   const expand = params => UriTemplate.expand(template, params);
@@ -9,4 +10,4 @@ const init = (template) => {
   return { expand, extract };
 };
 
-module.exports = { init };
+module.exports = { init, name, no };

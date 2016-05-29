@@ -1,8 +1,9 @@
-// temple
 // https://github.com/brettstimmerman/temple
 // NOTE:
 //   no extract
-const UriTemplate = require('temple');
+const no = 8;
+const name = 'temple';
+const UriTemplate = require(name);
 
 const init = (template) => {
   const t = UriTemplate.compile(template);
@@ -11,4 +12,4 @@ const init = (template) => {
   return { expand, extract };
 };
 
-module.exports = { init };
+module.exports = { init, name, no };
