@@ -14,7 +14,7 @@
   -  21,818 DL /   25 star / deps: pct-encode / [grncdr/uri-template][]
 6. [npm:uri-template-lite][] -> **test failed**
   -     455 DL /    2 star / deps: none / [litejs/uri-template-lite][]
-7. [npm:rfc6570][]
+7. [npm:rfc6570][] -> ** test failed**
   -     402 DL /    8 star / deps: none / [LuvDaSun/rfc6570][]
 8. [npm:temple][] -> **test failed**
   -      97 DL /    5 star / deps: none / [brettstimmerman/temple][]
