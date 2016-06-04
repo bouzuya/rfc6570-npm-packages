@@ -45,6 +45,7 @@ $ npm test
 [circle-ci-url]: https://circleci.com/gh/bouzuya/rfc6570-npm-packages
 
 [npm:rfc6570]: https://www.npmjs.com/package/rfc6570
+[npm:rfc6570-expand]: https://www.npmjs.com/package/rfc6570-expand
 [npm:uri-templates]: https://www.npmjs.com/package/uri-templates
 [npm:uritemplate]: https://www.npmjs.com/package/uritemplate
 [npm:uri-template.js]: https://www.npmjs.com/package/uri-template.js
@@ -55,6 +56,7 @@ $ npm test
 [npm:temple]: https://www.npmjs.com/package/temple
 
 [LuvDaSun/rfc6570]: https://github.com/LuvDaSun/rfc6570
+[bouzuya/rfc6570-expand]: https://github.com/bouzuya/rfc6570-expand
 [bramstein/url-template]: https://github.com/bramstein/url-template
 [brettstimmerman/temple]: https://github.com/brettstimmerman/temple
 [fxa/uritemplate-js]: https://github.com/fxa/uritemplate-js
