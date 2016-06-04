@@ -20,6 +20,8 @@
   -      97 DL /    5 star / deps: none / [brettstimmerman/temple][]
 9. [npm:uri-template.js][] -> **test failed**
   -      39 DL /    4 star / deps: lodash / [rezigned/uri-template.js][]
+10. [npm:rfc6570-expand][]
+  -      0 DL /    1 star / deps: none / [bouzuya/rfc6570-expand][]
 
 ## Usage
 

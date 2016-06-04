@@ -9,6 +9,7 @@ const module6 = require('../src/6'); // uri-template-lite
 const module7 = require('../src/7'); // rfc6570
 const module8 = require('../src/8'); // temple
 const module9 = require('../src/9'); // uri-template.js
+const module10 = require('../src/10'); // rfc6570-expand
 
 const modules = [
   module1,
@@ -19,7 +20,8 @@ const modules = [
   module6,
   module7,
   module8,
-  module9
+  module9,
+  module10
 ];
 
 const assertExpand = (init, template, variables, uris) => {
